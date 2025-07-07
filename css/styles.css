@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/fondo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+h2 {
+    color: #000;
+}
+
+/* Navbar */
+nav {
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li button {
+    background-color: #fff;
+    color: #6d9aba;
+    border: 2px solid #6d9aba;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+}
+
+nav ul li button:hover {
+    background-color: #6d9aba;
+    color: #fff;
+}
+
+nav ul li a button {
+    text-decoration: none;
+    font-size: inherit;
+}
+
+a#cerrar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+
+a#cerrar button {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: rgb(192, 204, 221);
+    border-radius: 15px;
+}
+
+/* Secciones */
+.seccion {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.seccion h2 {
+    margin-bottom: 20px;
+}
+
+.seccion form {
+    margin-bottom: 20px;
+}
+
+.seccion label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.seccion input,
+.seccion textarea,
+.seccion select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.seccion button {
+    background-color: #9facb5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.seccion button:hover {
+    background-color: #6d9aba;
+}
+
+.seccion textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #6d9aba;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #6d9aba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table a button:hover {
+    background-color: #5b8ca2;
+}
+
+/* Mensajes de error o alertas */
+.error {
+    color: rgb(229, 79, 79);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success {
+    color: #6d9aba;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#botones button {
+    display: block;  /* Hace que los botones estén uno arriba del otro */
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
